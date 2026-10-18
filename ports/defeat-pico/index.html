@@ -1,1 +1,33 @@
+<!-- This is the loader for anybody wondering -->
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Defeat Pico</title>
+    <style>
+        html,
+        body,
+        iframe {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #000;
+            border: 0;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <iframe id="game" allow="fullscreen; autoplay; gamepad; clipboard-write" allowfullscreen></iframe>
+    <script>
+        const DEFAULT_URL = "https://files.catbox.moe/dmthwe.html";
+        const TARGET_URL = new URLSearchParams(location.search).get("url") || DEFAULT_URL;
+        const PROXY = "https://loader.hexstudioservices.workers.dev/?url=";
+        document.getElementById("game").src = PROXY + encodeURIComponent(TARGET_URL);
+    </script>
+</body>
+</html>
