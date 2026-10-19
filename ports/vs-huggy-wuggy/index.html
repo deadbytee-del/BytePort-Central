@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Defeat Pico</title>
+    <title>Vs Huggy</title>
     <style>
         html,
         body,
@@ -24,7 +24,7 @@
 <body>
     <iframe id="game" allow="fullscreen; autoplay; gamepad; clipboard-write" allowfullscreen></iframe>
     <script>
-        const DEFAULT_URL = "https://files.catbox.moe/8m0wuq.html";
+        const DEFAULT_URL = "https://files.catbox.moe/fymayh.html";
         const TARGET_URL = new URLSearchParams(location.search).get("url") || DEFAULT_URL;
         const PROXY = "https://loader.hexstudioservices.workers.dev/?url=";
         document.getElementById("game").src = PROXY + encodeURIComponent(TARGET_URL);
