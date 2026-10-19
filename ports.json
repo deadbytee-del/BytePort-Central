@@ -1,2 +1,4 @@
-["ports/defeat-pico/"]
-["ports/vs-huggy-wuggy/"]
+[
+  "ports/defeat-pico/",
+  "ports/vs-huggy-wuggy/"
+]
